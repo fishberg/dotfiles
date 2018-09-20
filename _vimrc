@@ -99,7 +99,7 @@ set laststatus=2
  
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
-set confirm
+" set confirm
  
 " Use visual bell instead of beeping when doing something wrong
 set visualbell
@@ -110,7 +110,9 @@ set visualbell
 set t_vb=
  
 " Enable use of the mouse for all modes
-set mouse=a
+" set mouse=a
+" Disable use of the mouse for all modes
+set mouse=
  
 " Set the command window height to 2 lines, to avoid many cases of having to
 " "press <Enter> to continue"
@@ -154,6 +156,19 @@ map Y y$
  
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
-nnoremap <C-L> :nohl<CR><C-L>
+" nnoremap <C-L> :nohl<CR><C-L>
+nnoremap <C-H> :bp<CR><C-L>
+nnoremap <C-L> :bn<CR><C-L>
  
 "------------------------------------------------------------
+
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+call plug#end()
+
+let g:airline#extensions#tabline#enabled = 1
+
+"------------------------------------------------------------
+
+set noswapfile
+
