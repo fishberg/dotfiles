@@ -11,3 +11,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 `:PlugInstall`
 
+### Vim Plugins
+
+https://github.com/vim-airline/vim-airline
+
