@@ -102,7 +102,7 @@ set laststatus=2
 " set confirm
  
 " Use visual bell instead of beeping when doing something wrong
-set visualbell
+" set visualbell
  
 " And reset the terminal code for the visual bell. If visualbell is set, and
 " this line is also included, vim will neither flash nor beep. If visualbell
@@ -164,6 +164,8 @@ nnoremap <C-L> :bn<CR><C-L>
 
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
+Plug 'Valloric/YouCompleteMe'
+" Plug 'ajh17/VimCompletesMe'
 call plug#end()
 
 let g:airline#extensions#tabline#enabled = 1
@@ -171,4 +173,4 @@ let g:airline#extensions#tabline#enabled = 1
 "------------------------------------------------------------
 
 set noswapfile
-
+" set term=screen-256color
