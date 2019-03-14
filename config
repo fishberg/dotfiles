@@ -157,3 +157,18 @@ bar {
 
 exec --no-startup-id feh --bg-scale /home/fishberg/Pictures/wallpapers/background.png
 bindsym $mod+Shift+p exec --no-startup-id i3lock -i /home/fishberg/Pictures/wallpapers/lockscreen.png -e -f
+
+# screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +2
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -2
+
+# volume control
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+
+# i3-gaps
+#gaps inner 8
+#gaps outer 0
+
+#for_window [class="^.*"] border pixel 2
