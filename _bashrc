@@ -16,8 +16,10 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+# bash 4.3 and later require negative value for unlimited history
+# https://stackoverflow.com/questions/9457233/unlimited-bash-history
+HISTSIZE=-1
+HISTFILESIZE=-1
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -115,3 +117,20 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export EDITOR=vim
+#export TERM"xterm-256color"
+
+alias vi=vim
+alias src='source ~/.bashrc'
+alias py=python3
+alias py2=python2
+alias py3=python3
+alias ipy=ipython3
+alias ipy2=ipython2
+alias ipy3=ipython3
+alias clock='tty-clock -s -c -C 3 -t -T'
+
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
