@@ -1,5 +1,6 @@
 alias src='source ~/.bashrc'
 alias vi=nvim
+alias copy='xclip -selection c'
 
 alias ls='ls --color'
 alias l='ls'
