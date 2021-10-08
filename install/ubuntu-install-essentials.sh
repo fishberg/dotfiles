@@ -1,6 +1,7 @@
 # cli
 ## net-tools -> ifconfig
 sudo apt install -y git curl neovim python3 python3-pip net-tools
+sudo apt install -y tmux
 
 # gnome
 sudo apt install -y gnome-session gnome-session-wayland gnome-tweaks
