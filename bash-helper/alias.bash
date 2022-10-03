@@ -7,3 +7,5 @@ alias ls='ls --color'
 alias l='ls'
 alias ll='ls -l'
 alias la='ls -a'
+
+alias devel='source devel/setup.bash'
