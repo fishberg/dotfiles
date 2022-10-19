@@ -14,7 +14,8 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term termite
+#set $term termite
+set $term gnome-terminal
 #set $term urxvt
 #set $term xterm
 # Your preferred application launcher
@@ -26,7 +27,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #output * bg /home/fishberg/docs/pictures/wallpapers/ringed-city.png fill
-output * bg /home/fishberg/docs/pictures/wallpapers/ariandel.jpg fill
+output * bg /home/fishberg/Pictures/wallpapers/ariandel.jpg fill
 #
 # Example configuration:
 #
