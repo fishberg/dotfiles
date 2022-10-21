@@ -2,6 +2,7 @@ alias src='source ~/.bashrc'
 alias vi=nvim
 alias copy='xclip -selection c'
 alias strip='nbstripout *.ipynb'
+alias exe='chmod +x'
 
 alias ls='ls --color'
 alias l='ls'
