@@ -6,10 +6,15 @@ set expandtab
 " https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces#1878983
 
 set noswapfile
-nnoremap <C-H> :bp<CR><C-L>
-nnoremap <C-L> :bn<CR><C-L>
 set hlsearch
 set hidden
+
+" allow change buffers with Ctrl+H and Ctrl+L
+nnoremap <C-H> :bp<CR><C-L>
+nnoremap <C-L> :bn<CR><C-L>
+
+" copy to the end of the line
+nnoremap Y y$
 
 " Airline
 call plug#begin('~/.vim/plugged')
