@@ -3,6 +3,7 @@ alias vi=nvim
 alias copy='xclip -selection c'
 alias strip='nbstripout *.ipynb'
 alias exe='chmod +x'
+alias open='nautilus -w .'
 
 alias ls='ls --color'
 alias l='ls'
