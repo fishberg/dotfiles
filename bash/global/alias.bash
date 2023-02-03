@@ -13,3 +13,5 @@ alias la='ls -a'
 alias devel='source devel/setup.bash'
 
 alias lastDL='ls -t ~/Downloads | egrep -v "\.part$" | head -1 | xargs find ~/Downloads -name'
+
+alias today='date "+%F"'
