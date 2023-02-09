@@ -3,12 +3,14 @@ alias vi=nvim
 alias copy='xclip -selection c'
 alias strip='nbstripout *.ipynb'
 alias exe='chmod +x'
-alias open='nautilus -w .'
+alias open='nohup nautilus -w . >/dev/null 2>&1'
 
 alias ls='ls --color'
 alias l='ls'
 alias ll='ls -l'
 alias la='ls -a'
+
+alias lt='ls -t'
 
 alias devel='source devel/setup.bash'
 
