@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # commit user info
 git config --global user.name "Andrew Fishberg"

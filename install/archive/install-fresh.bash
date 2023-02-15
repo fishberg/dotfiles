@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # curl -sLf https://raw.githubusercontent.com/fishberg/dotfiles/master/install/install-fresh.sh | bash
 
