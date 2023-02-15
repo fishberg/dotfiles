@@ -11,8 +11,8 @@ else
 fi
 
 # https clone
-raw_content_url=https://raw.githubusercontent.com/fishberg/dotfiles/master
-wget -O - $(raw_content_url)/install/dotfiles-repo/clone-https.bash | bash
+RAW_CONTENT_URL=https://raw.githubusercontent.com/fishberg/dotfiles/master
+wget -O - $RAW_CONTENT_URL/install/dotfiles-repo/clone-https.bash | bash
 
 # run install scripts
 cd ~/.dotfiles/install
