@@ -1,3 +1,12 @@
+#!/usr/bin/env bash
+
+# update
+sudo apt -y update
+sudo apt -y upgrade
+
+# ubuntu drivers
+sudo ubuntu-drivers autoinstall
+
 # minimum functionality
 sudo apt install -y git curl neovim tmux
 

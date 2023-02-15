@@ -2,16 +2,16 @@
 
 ### Install to ~/.dotfiles
 
-```sh
+```bash
 git clone git@github.com:fishberg/dotfiles.git ~/.dotfiles
 ```
 
 ### Install on Fresh System
 
-```sh
-wget -O - https://raw.githubusercontent.com/fishberg/dotfiles/master/install/quick-start.bash | bash
+```bash
+wget -O - https://raw.githubusercontent.com/fishberg/dotfiles/master/install/quick-start.bash | bash -s
 ```
 
-```sh
-curl -sLf https://raw.githubusercontent.com/fishberg/dotfiles/master/install/quick-start.bash | bash
+```bash
+curl -sLf https://raw.githubusercontent.com/fishberg/dotfiles/master/install/quick-start.bash | bash -s
 ```
