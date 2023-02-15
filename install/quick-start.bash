@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# wget -O - https://raw.githubusercontent.com/fishberg/dotfiles/master/install/quick-start.bash | bash
+# wget -q -O - https://raw.githubusercontent.com/fishberg/dotfiles/master/install/quick-start.bash | bash -s
 
 # check programs are installed
 if which git > /dev/null; then
@@ -12,7 +12,7 @@ fi
 
 # https clone
 RAW_CONTENT_URL=https://raw.githubusercontent.com/fishberg/dotfiles/master
-wget -O - $RAW_CONTENT_URL/install/dotfiles-repo/clone-https.bash | bash
+wget -q -O - $RAW_CONTENT_URL/install/dotfiles-repo/clone-https.bash | bash -s
 
 # run install scripts
 cd ~/.dotfiles/install
@@ -22,7 +22,6 @@ scripts=$(find . -maxdepth 1 -type f | sort | grep -E "\.\/[[:digit:]][[:digit:]
 for script in $scripts; do
     echo
     read -p "RUN INSTALL SCRIPT $script? (y/n) " yn
-
     case $yn in 
         y ) echo "running $script"; $script ; echo "complete";;
         * ) echo "skipping $script"
