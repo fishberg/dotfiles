@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# wget -O - https://raw.githubusercontent.com/fishberg/dotfiles/master/install/quickstart.bash | bash
+# wget -O - https://raw.githubusercontent.com/fishberg/dotfiles/master/install/quick-start.bash | bash
 
 # check programs are installed
 if which git > /dev/null; then
