@@ -14,16 +14,5 @@ fi
 RAW_CONTENT_URL=https://raw.githubusercontent.com/fishberg/dotfiles/master
 wget -q -O - $RAW_CONTENT_URL/install/dotfiles-repo/clone-https.bash | bash -s
 
-# run install scripts
-cd ~/.dotfiles/install
-
-scripts=$(find . -maxdepth 1 -type f | sort | grep -E "\.\/[[:digit:]][[:digit:]]_.*\.bash")
-
-for script in $scripts; do
-    echo
-    read -p "RUN INSTALL SCRIPT $script? (y/n) " yn
-    case $yn in 
-        y ) echo "running $script"; $script ; echo "complete";;
-        * ) echo "skipping $script"
-    esac
-done
+# run installers
+bash ~/.dotfiles/install/run-installers.bash
