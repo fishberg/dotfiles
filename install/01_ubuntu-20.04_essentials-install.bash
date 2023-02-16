@@ -30,4 +30,4 @@ pip3 install grip
 sudo apt install -y gimp ffmpeg
 
 # purge
-sudo apt purge -y update-manager
+sudo apt purge -y update-manager update-notifier unattended-upgrades
