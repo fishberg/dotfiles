@@ -4,6 +4,7 @@ alias copy='xclip -selection c'
 alias strip='nbstripout *.ipynb'
 alias exe='chmod +x'
 alias open='nohup nautilus -w . >/dev/null 2>&1'
+alias dotfiles_sync='git -C ~/.dotfiles pull; src'
 
 alias ls='ls --color'
 alias l='ls'
