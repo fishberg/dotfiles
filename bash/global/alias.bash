@@ -9,6 +9,8 @@ alias home='cd ~'
 alias downloads='cd ~/Downloads'
 
 alias dotfiles='cd ~/.dotfiles'
+alias dotfiles_bash='cd ~/.dotfiles/bash/global'
+alias dotfiles_bash_local='cd ~/.dotfiles/bash/local'
 alias dotfiles_sync='git -C ~/.dotfiles pull; src'
 
 alias ls='ls --color'
@@ -17,9 +19,8 @@ alias ll='ls -l'
 alias la='ls -a'
 
 alias lt='ls -t'
+alias dl='ls -t -1 ~/Downloads'
 
 alias devel='source devel/setup.bash'
-
-alias lastDL='ls -t ~/Downloads | egrep -v "\.part$" | head -1 | xargs -d '\n' find ~/Downloads -name'
 
 alias today='date "+%F"'

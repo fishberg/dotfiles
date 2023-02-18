@@ -42,3 +42,9 @@ archive(){
         * ) echo "exiting";;
     esac
 }
+
+
+# TODO lastDL() name doesn't work, DL() is something in bash?
+dl_last(){
+    ls -t ~/Downloads | egrep -v "\.part$" | head -1 | xargs -d '\n' find ~/Downloads -name
+}
