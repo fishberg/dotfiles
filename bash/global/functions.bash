@@ -48,3 +48,11 @@ archive(){
 dl_last(){
     ls -t --color=never ~/Downloads | egrep -v "\.part$" | head -1 | xargs find ~/Downloads -name
 }
+
+dl_mv(){
+    if [ -z "$1" ]; then
+        mv -v "$(dl_last)" .
+    else
+        mv -v "$(dl_last)" $1
+    fi
+}
