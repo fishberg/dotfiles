@@ -46,5 +46,5 @@ archive(){
 
 # TODO lastDL() name doesn't work, DL() is something in bash?
 dl_last(){
-    ls -t ~/Downloads | egrep -v "\.part$" | head -1 | xargs -d '\n' find ~/Downloads -name
+    ls -t --color=never ~/Downloads | egrep -v "\.part$" | head -1 | xargs find ~/Downloads -name
 }
