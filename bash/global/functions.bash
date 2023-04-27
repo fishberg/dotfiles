@@ -75,3 +75,12 @@ readme_init(){
         echo "README.md already exists, skipping..."
     fi
 }
+
+firelink(){
+    echo "attempt connection to Firelink..."
+    until nmcli device wifi rescan && nmcli device wifi connect Firelink
+    do
+        echo "trying again in 5 seconds..."
+        sleep 5
+    done
+}
