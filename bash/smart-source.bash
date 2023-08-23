@@ -10,7 +10,7 @@ done
 
 # source locals
 LOCAL_DIR=$DOTFILES_ROOT/bash/local/$(hostname)
-if [[ -e $local_dir ]]; then
+if [[ -e $LOCAL_DIR ]]; then
     for f in $LOCAL_DIR/*; do
         source $f
     done
