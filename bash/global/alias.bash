@@ -24,3 +24,5 @@ alias dl='ls -t -1 ~/Downloads'
 alias devel='source devel/setup.bash'
 
 alias today='date "+%F"'
+
+alias space='du -h -d 0'
