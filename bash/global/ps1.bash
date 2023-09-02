@@ -18,4 +18,10 @@ BG_PURPLE='\[\033[45m\]'
 BG_CYAN='\[\033[46m\]'
 BG_WHITE='\[\033[47m\]'
 
-export PS1="\n$GREEN\u@\h$WHITE:$YELLOW\w$WHITE\n$ "
+# no git prompt
+#export PS1="\n$GREEN\u@\h$WHITE:$YELLOW\w$WHITE\n$ "
+
+# git prompt
+# combines ' and " strings so __git_ps1 reevals for each prompt
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PS1="\n$GREEN\u@\h$WHITE:$YELLOW\w$CYAN"'$(__git_ps1)'"$WHITE\n$ "
