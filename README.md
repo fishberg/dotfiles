@@ -4,6 +4,8 @@
 
 ```bash
 git clone git@github.com:fishberg/dotfiles.git ~/.dotfiles
+echo 'export DOTFILES_ROOT="$HOME/.dotfiles"' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 ### Install on Fresh System
