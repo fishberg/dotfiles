@@ -41,7 +41,7 @@ set -x
 swapoff -a
 
 # create swap file (16GB)
-dd if=/dev/zero of=/swapfile bs=1M count=16384
+dd if=/dev/zero of=/swapfile bs=1M count=16384 status=progress
 
 # setup swap file
 mkswap /swapfile
