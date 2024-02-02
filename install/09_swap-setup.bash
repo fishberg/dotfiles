@@ -21,7 +21,7 @@ confirm() {
 # EUID == 0 if root user
 # https://stackoverflow.com/questions/18215973/how-to-check-if-running-as-root-in-a-bash-script
 if [ "$EUID" -ne 0 ]; then
-    echo "Please run as root"
+    echo "Run script as root or with sudo"
     exit
 fi
 
@@ -50,6 +50,9 @@ chmod 0600 /swapfile
 # attach swap
 swapon /swapfile
 
+# Unsets show commands as they run
+set +x
+
 # add to /etc/fstab if needed
 FSTAB_LINE='/swapfile                                 none            swap    sw              0       0'
 if [[ $(grep -e '^/swapfile' /etc/fstab | wc -l) == 0 ]]; then
@@ -59,5 +62,3 @@ else
     echo "not adding line to /etc/fstab, detected prexisting /swapfile line"
 fi
 
-# Unsets show commands as they run
-set +x
