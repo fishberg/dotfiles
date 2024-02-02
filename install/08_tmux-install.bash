@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 
-# assumes ~/.dotfiles
-ln -s ~/.dotfiles/tmux/_tmux.conf ~/.tmux.conf
+ln -s $DOTFILES_ROOT/tmux/_tmux.conf ~/.tmux.conf
