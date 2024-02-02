@@ -229,6 +229,7 @@ bar {
 }
 
 output eDP-1 scale 2
+#output HDMI-A-1 scale 2.0
 
 # control volume with alsamixer
 bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
