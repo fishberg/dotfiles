@@ -18,13 +18,13 @@ sudo apt install -y htop neofetch pm-utils net-tools xclip
 
 # python3
 sudo apt install -y python-is-python3 python3-pip
-pip3 install numpy
-pip3 install matplotlib
-pip3 install pandas
-pip3 install scipy
-pip3 install jupyterlab
-pip3 install nbstripout
-pip3 install grip
+pip install numpy
+pip install matplotlib
+pip install pandas
+pip install scipy
+pip install jupyterlab
+pip install nbstripout
+pip install grip
 
 # media
 sudo apt install -y gimp ffmpeg
