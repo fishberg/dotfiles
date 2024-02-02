@@ -33,6 +33,10 @@ if ! confirm "Showing current swapfiles. Will detach all swapfiles and create ne
     exit
 fi
 
+# Show commands as they run
+# https://stackoverflow.com/questions/2853803/how-to-echo-shell-commands-as-they-are-executed
+set -x
+
 # remove all swaps
 swapoff -a
 
@@ -48,6 +52,12 @@ swapon /swapfile
 
 # add to /etc/fstab if needed
 FSTAB_LINE='/swapfile                                 none            swap    sw              0       0'
-if [[ $(grep '/swapfile' /etc/fstab | wc -l) == 0 ]]; then
+if [[ $(grep -e '^/swapfile' /etc/fstab | wc -l) == 0 ]]; then
+    echo "adding line to /etc/fstab"
     echo $FSTAB_LINE >> /etc/fstab
+else
+    echo "not adding line to /etc/fstab, detected prexisting /swapfile line"
 fi
+
+# Unsets show commands as they run
+set +x
