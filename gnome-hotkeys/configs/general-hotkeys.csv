@@ -1,0 +1,8 @@
+name,command,binding
+
+# General
+Terminal,gnome-terminal,<Super>Return
+Firefox,firefox -new-window,<Super>f
+Calculator,gnome-calculator,<Super>c
+Nautilus,nautilus -w,<Super>e
+Downloads,nautilus --new-window ~/Downloads,<Super>d

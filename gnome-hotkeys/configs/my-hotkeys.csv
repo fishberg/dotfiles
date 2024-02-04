@@ -1,0 +1,27 @@
+name,command,binding
+
+# General
+Terminal,$DOTFILES_ROOT/gnome-hotkeys/scripts/terminal.bash,<Super>Return
+Firefox,$DOTFILES_ROOT/gnome-hotkeys/scripts/firefox.bash,<Super>f
+Calculator,$DOTFILES_ROOT/gnome-hotkeys/scripts/calculator.bash,<Super>c
+Nautilus,$DOTFILES_ROOT/gnome-hotkeys/scripts/nautilus.bash,<Super>e
+Downloads,$DOTFILES_ROOT/gnome-hotkeys/scripts/downloads.bash,<Super>d
+
+# Wikis
+Weiss,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/weiss.bash,<Super>semicolon
+Noir,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/noir.bash,<Super>apostrophe
+
+# Open Websites
+GitHub,$DOTFILES_ROOT/gnome-hotkeys/scripts/github.bash,<Super>g
+Overleaf,$DOTFILES_ROOT/gnome-hotkeys/scripts/overleaf.bash,<Primary><Alt>o # Test
+arXiv,$DOTFILES_ROOT/gnome-hotkeys/scripts/open-arxiv-ro.bash,<Super>u
+
+# Academic Search
+Google Scholar,$DOTFILES_ROOT/gnome-hotkeys/scripts/google-scholar.bash,<Super>bracketleft
+Semantic Scholar,$DOTFILES_ROOT/gnome-hotkeys/scripts/semantic-scholar.bash,<Super>bracketright
+Connected Papers,$DOTFILES_ROOT/gnome-hotkeys/scripts/connected-papers.bash,<Super>backslash
+
+# Clipboard Tools
+Date to Clipboard,$DOTFILES_ROOT/gnome-hotkeys/scripts/date-to-clipboard.bash,<Shift><Super>d
+Zoom URL,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/zoom-url.bash,<Super>period
+URL Strip,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/url-strip.bash,<Shift><Super>l
