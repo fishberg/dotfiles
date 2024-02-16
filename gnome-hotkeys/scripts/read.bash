@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-nautilus --new-window ~/dirs/read
+nautilus --new-window ~/read
