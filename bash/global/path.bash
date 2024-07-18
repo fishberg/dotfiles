@@ -1,2 +1,2 @@
 # pip install directory
-PATH=~/.local/bin:$PATH
+PATH=~/.local/bin:$DOTFILES_ROOT/bin:$PATH
