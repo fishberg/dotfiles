@@ -21,7 +21,7 @@ sudo apt update
 sudo apt install -y ros-noetic-desktop-full
 
 # 1.5 Environment setup
-echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+echo -e "\n# ROS install\nsource /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # 1.6 Dependencies for building packages
