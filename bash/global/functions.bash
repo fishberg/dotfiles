@@ -84,3 +84,8 @@ firelink(){
         sleep 5
     done
 }
+
+hdspace(){
+    df -h | head -1
+    df -h | grep -e "/$" --color=never
+}
