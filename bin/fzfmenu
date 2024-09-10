@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# usage:
+# $ echo -e "yes\nno" | fzfmenu
+
+# Reference: https://askubuntu.com/questions/1489435/wayland-replacement-for-dmenu
+
+gnome-terminal -- bash -c "fzf  < /proc/$$/fd/0 > /proc/$$/fd/1"
