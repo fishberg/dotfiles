@@ -76,6 +76,18 @@ readme_init(){
     fi
 }
 
+repo_init(){
+    readme_init
+    git add README.md
+    git commit -m "init commit"
+    git branch -M main
+    git push -u origin main
+}
+
+repo_new(){
+    firefox -new-tab https://github.com/new
+}
+
 firelink(){
     echo "attempt connection to Firelink..."
     until nmcli device wifi rescan && nmcli device wifi connect Firelink
