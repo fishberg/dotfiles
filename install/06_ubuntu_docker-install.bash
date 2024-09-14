@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Install Docker Engine on Ubuntu
+# Install Docker Engine on Ubuntu (20.04, 22.04, 24.04)
 # https://docs.docker.com/engine/install/ubuntu/
 
 # Add Docker's official GPG key:
