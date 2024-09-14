@@ -7,7 +7,7 @@ git config --global user.email "fishberg.dev@gmail.com"
 # use vim
 git config --global core.editor nvim
 
-# set default branch
+# set default branch (req. Git 2.28+, otherwise is ignored)
 git config --global init.defaultBranch main
 
 # rebase instead of merge
