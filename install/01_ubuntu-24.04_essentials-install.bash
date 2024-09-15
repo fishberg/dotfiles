@@ -14,7 +14,7 @@ sudo ubuntu-drivers install
 sudo apt install -y git curl neovim tmux
 
 # utilities
-sudo apt install -y htop neofetch pm-utils net-tools xclip progress magic-wormhole rclone ffmpeg
+sudo apt install -y htop neofetch pm-utils net-tools xclip progress magic-wormhole rclone ffmpeg ccrypt
 
 # purge
 sudo apt purge -y update-manager update-notifier unattended-upgrades
