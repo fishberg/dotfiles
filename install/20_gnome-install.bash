@@ -34,7 +34,7 @@ sudo apt install -y gnome-session gnome-tweaks
 # ----------------------------------------------------------
 # gnome tweaks
 # ----------------------------------------------------------
-# Windows > Focus Follows Mouse
+# Windows > Focus on Hover
 
 echo 'read script comments for additional config settings'
 

@@ -22,7 +22,7 @@ Noir,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/noir.bash,<Super><Shift>semico
 
 # Open Websites
 GitHub,$DOTFILES_ROOT/gnome-hotkeys/scripts/github.bash,<Super>g
-Overleaf,$DOTFILES_ROOT/gnome-hotkeys/scripts/overleaf.bash,<Super><Shift>g
+Overleaf,$DOTFILES_ROOT/gnome-hotkeys/scripts/overleaf.bash,<Super>o
 arXiv,$DOTFILES_ROOT/gnome-hotkeys/scripts/open-arxiv-ro.bash,<Super>u
 
 # Academic Search
