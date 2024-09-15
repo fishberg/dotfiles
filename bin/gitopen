@@ -18,7 +18,7 @@ if re.search(r'^git@',url):
     res = url
     res = re.sub(r'^git@','https://',res)
     res = re.sub('(?<!https):','/',res)
-    res = re.sub('\.git$','',res)
+    res = re.sub(r'\.git$','',res)
     #print(res)
     open_firefox(res)
     sys.exit(0)
@@ -26,7 +26,7 @@ if re.search(r'^git@',url):
 # `https://github.com/fishberg/dotfiles.git`
 if re.search(r'^https://',url):
     res = url
-    res = re.sub('\.git$','',res)
+    res = re.sub(r'\.git$','',res)
     #print(res)
     open_firefox(res)
     sys.exit(0)
