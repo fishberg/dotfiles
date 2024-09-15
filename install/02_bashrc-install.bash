@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# show commands
+set -x
+
 # assumes ~/.dotfiles
 echo '
 # installed helper files

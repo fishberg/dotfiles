@@ -1,5 +1,12 @@
 name,command,binding
 
+# <Primary> -> ctrl
+# <Alt> -> alt
+# <Super> -> windows key
+# <Shift> -> shift
+# ; -> semicolon
+# ' -> apostrophe
+
 # General
 Terminal,$DOTFILES_ROOT/gnome-hotkeys/scripts/terminal.bash,<Super>Return
 Firefox,$DOTFILES_ROOT/gnome-hotkeys/scripts/firefox.bash,<Super>f
@@ -11,11 +18,11 @@ Storage,$DOTFILES_ROOT/gnome-hotkeys/scripts/storage.bash,<Super>s
 
 # Wikis
 Weiss,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/weiss.bash,<Super>semicolon
-Noir,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/noir.bash,<Super>apostrophe
+Noir,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/noir.bash,<Super><Shift>semicolon
 
 # Open Websites
 GitHub,$DOTFILES_ROOT/gnome-hotkeys/scripts/github.bash,<Super>g
-Overleaf,$DOTFILES_ROOT/gnome-hotkeys/scripts/overleaf.bash,<Primary><Alt>o
+Overleaf,$DOTFILES_ROOT/gnome-hotkeys/scripts/overleaf.bash,<Super><Shift>g
 arXiv,$DOTFILES_ROOT/gnome-hotkeys/scripts/open-arxiv-ro.bash,<Super>u
 
 # Academic Search

@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# show commands
+set -x
+
 # Reference:
 # https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html
 

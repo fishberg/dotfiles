@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# show commands
+set -x
+
 # update
 sudo apt -y update
 sudo apt -y upgrade

@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# show commands
+set -x
+
 # commit user info
 git config --global user.name "Andrew Fishberg"
 git config --global user.email "fishberg.dev@gmail.com"

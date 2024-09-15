@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# show commands
+set -x
+
 # Install Docker Engine on Ubuntu (20.04, 22.04, 24.04)
 # https://docs.docker.com/engine/install/ubuntu/
 
@@ -29,4 +32,5 @@ sudo usermod -aG docker $USER
 newgrp docker
 
 # verify install and no sudo
-docker run hello-world
+#docker run hello-world
+echo 'test installation with: `docker run hello-world`'
