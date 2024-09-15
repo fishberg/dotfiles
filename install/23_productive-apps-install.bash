@@ -32,17 +32,25 @@ rm signal-desktop-keyring.gpg
 # ----------------------------------------------------------
 # https://obsidian.md/download
 
-sudo snap install obsidian --classic
+#sudo snap install obsidian --classic
+
+# https://flathub.org/apps/md.obsidian.Obsidian
+flatpak install flathub md.obsidian.Obsidian
+# flatpak run md.obsidian.Obsidian
 
 # ----------------------------------------------------------
 # Todoist
 # ----------------------------------------------------------
 # https://todoist.com/downloads/linux
 
-sudo snap install todoist
+#sudo snap install todoist
 
 # inhibit refreshes of snaps while running
-sudo snap set core experimental.refresh-app-awareness=true
+#sudo snap set core experimental.refresh-app-awareness=true
+
+# https://flathub.org/apps/com.todoist.Todoist
+flatpak install flathub com.todoist.Todoist
+# flatpak run com.todoist.Todoist
 
 # ----------------------------------------------------------
 # Slack

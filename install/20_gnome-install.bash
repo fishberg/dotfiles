@@ -27,6 +27,7 @@ sudo apt install -y gnome-session gnome-tweaks
 # Settings > Appearance > Style > Dark
 # Settings > Power > Power Mode > Performance
 # Settings > Power > General > Show Battery Percentage > On
+# Settings > Mouse & Touchpad > Touchpad > Scroll Direction > Traditional
 # Settings > Multitasking > Active Screan Edges > On
 # Settings > Multitasking > Multi-Monitor > Workspaces on all displays
 # Settings > Notifications > Do Not Disturb > On
