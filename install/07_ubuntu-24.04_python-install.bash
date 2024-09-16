@@ -18,3 +18,4 @@ pip install nbstripout
 pip install tabulate
 pip install termcolor
 pip install grip
+pip install tmuxp
