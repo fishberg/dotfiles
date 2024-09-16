@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 
-# http://wiki.ros.org/noetic/Installation/Ubuntu
+# show commands
+set -x
+
+# Ubuntu 20.04 -> ROS1 Noetic Ninjemys (2020) [EOL May 2025]
+# - Targets: http://wiki.ros.org/noetic
+# - ROS1 Releases: http://wiki.ros.org/Distributions
+
+# Installation Instructions:
+# - http://wiki.ros.org/noetic/Installation/Ubuntu
 
 # 1.1 Configure your Ubuntu respositories
 sudo add-apt-repository universe

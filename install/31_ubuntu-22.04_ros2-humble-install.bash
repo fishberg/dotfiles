@@ -3,8 +3,12 @@
 # show commands
 set -x
 
-# Reference:
-# https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html
+# Ubuntu 22.04 -> ROS2 Humble Irwini (2022) [EOL May 2027]
+# - Targets: https://docs.ros.org/en/humble/Installation.html
+# - ROS2 Releases: https://docs.ros.org/en/rolling/Releases.html
+
+# Installation Instructions:
+# - https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
 
 # ----------------------------------------------------------
 # Set locale
@@ -39,13 +43,13 @@ sudo apt update && sudo apt install ros-dev-tools
 # ----------------------------------------------------------
 sudo apt update
 sudo apt upgrade
-sudo apt install ros-jazzy-desktop
+sudo apt install ros-humble-desktop
 
 # ----------------------------------------------------------
 # Setup environment
 # ----------------------------------------------------------
 echo "# ROS install" >> ~/.bashrc
-echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 
 # ----------------------------------------------------------
 # Try some examples
