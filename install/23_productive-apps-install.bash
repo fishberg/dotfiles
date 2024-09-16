@@ -58,3 +58,12 @@ flatpak install flathub com.todoist.Todoist
 # https://slack.com/downloads/linux
 
 sudo snap install slack
+
+# ----------------------------------------------------------
+# Zotero
+# ----------------------------------------------------------
+# https://www.zotero.org/download/
+
+flatpak install flathub org.zotero.Zotero
+
+echo "install Zotero Firefox plugin: https://www.zotero.org/download/"
