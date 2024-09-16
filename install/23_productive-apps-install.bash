@@ -64,6 +64,8 @@ sudo snap install slack
 # ----------------------------------------------------------
 # https://www.zotero.org/download/
 
+# https://flathub.org/apps/org.zotero.Zotero
 flatpak install flathub org.zotero.Zotero
+# flatpak run org.zotero.Zotero
 
 echo "install Zotero Firefox plugin: https://www.zotero.org/download/"
