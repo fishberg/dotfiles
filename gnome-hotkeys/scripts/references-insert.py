@@ -38,8 +38,8 @@ def get_glob(s):
     return sorted(glob(s))
 
 def idx_to_path(idx):
-    idx_str = '%08d' % idx
-    return f'{IDX_PATH}/{idx_str[0:4]}/{idx_str[4:8]}'
+    idx_str = '%06d' % idx
+    return f'{IDX_PATH}/{idx_str[0:4]}/{idx_str[4:6]}'
 
 def path_to_idx(path):
     root,_ = os.path.splitext(path)
@@ -52,7 +52,7 @@ def get_idx_last():
         return 0
     b = get_glob(f'{a[-1]}/*')
     if len(b) == 0:
-        return path_to_idx(f'{a[-1]}/0000')
+        return path_to_idx(f'{a[-1]}/00')
     return path_to_idx(f'{a[-1]}/{b[-1]}')
 
 class Reference:
@@ -90,6 +90,7 @@ class Reference:
         # idx
         self.idx_filepath = f'{idx_to_path(self.idx)}{self.ext}'
         self.idx_dir = os.path.dirname(self.idx_filepath)
+
         self.idx_relpath = os.path.relpath(self.dst, self.idx_dir)
 
     def has_collision(self):
