@@ -17,6 +17,7 @@ Read,$DOTFILES_ROOT/gnome-hotkeys/scripts/read.bash,<Super>r
 Textbooks,$DOTFILES_ROOT/gnome-hotkeys/scripts/textbooks.bash,<Super>t
 Storage,$DOTFILES_ROOT/gnome-hotkeys/scripts/storage.bash,<Super>s
 References,$DOTFILES_ROOT/gnome-hotkeys/scripts/references.bash,<Super>x
+References Insert,$DOTFILES_ROOT/gnome-hotkeys/scripts/references-insert.bash,<Super><Shift>x
 
 # Wikis
 Weiss,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/weiss.bash,<Super>semicolon
