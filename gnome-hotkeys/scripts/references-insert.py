@@ -7,13 +7,15 @@ import subprocess
 from glob import glob
 import time
 
+HOME = os.path.expanduser('~')
 REFS_PATH = os.path.expanduser('~/refs')
 ARCHIVE_PATH = f'{REFS_PATH}/archive'
 DATE_PATH = f'{REFS_PATH}/date'
 IDX_PATH = f'{REFS_PATH}/idx'
 IMPORT_PATH = f'{REFS_PATH}/import'
 
-LOG_PATH = f'{REFS_PATH}/debug.log'
+LOG_PATH = f'{REFS_PATH}/.debug.log'
+LIBRARY_PATH = f'{REFS_PATH}/library.csv'
 
 assert os.path.isdir(REFS_PATH)
 assert os.path.isdir(ARCHIVE_PATH)
@@ -127,6 +129,15 @@ class Reference:
         b = self.idx_filepath
         write_log(f'ln -s {a} {b}')
         os.symlink(a,b)
+
+    def write_library(self):
+        a = self.dst.replace(HOME,'~')
+        b = self.date_filepath.replace(HOME,'~')
+        c = self.idx_filepath.replace(HOME,'~')
+        entry = f'{a},{b},{c}'
+        write_log(f'Library Entry: {entry}')
+        with open(LIBRARY_PATH,'a') as f:
+            f.write(entry + '\n')
     
     def run(self):
         self.make_hash_folders()
@@ -135,6 +146,7 @@ class Reference:
         self.make_date()
         self.make_idx_folders()
         self.make_idx()
+        self.write_library()
 
 def main():
     write_log('start')
@@ -164,6 +176,8 @@ def main():
     for ref in refs:
         ref.run()
         write_log(f'file://{ref.idx_filepath}',display=True)
+
+    write_log('done')
 
 if __name__ == '__main__':
     main()
