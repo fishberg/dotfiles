@@ -53,4 +53,4 @@ BOLD=$(tput bold)
 # git prompt
 # combines ' and " strings so __git_ps1 reevals for each prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1="\n$GREEN\u@\h$WHITE:$YELLOW\w$CYAN"'$(__git_ps1)'"$WHITE\n$ $RESET"
+export PS1="\n$GREEN\u@\h$WHITE:$YELLOW\w$CYAN"'$(__git_ps1)'"$WHITE\n$ $WHITE"
