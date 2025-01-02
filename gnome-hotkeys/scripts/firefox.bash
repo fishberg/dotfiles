@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-firefox -new-window
+firefox --new-window

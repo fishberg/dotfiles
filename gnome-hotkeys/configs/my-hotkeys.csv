@@ -10,6 +10,7 @@ name,command,binding
 # General
 Terminal,$DOTFILES_ROOT/gnome-hotkeys/scripts/terminal.bash,<Super>Return
 Firefox,$DOTFILES_ROOT/gnome-hotkeys/scripts/firefox.bash,<Super>f
+Firefox Private,$DOTFILES_ROOT/gnome-hotkeys/scripts/firefox-private.bash,<Super><Shift>f
 Calculator,$DOTFILES_ROOT/gnome-hotkeys/scripts/calculator.bash,<Super>c
 Nautilus,$DOTFILES_ROOT/gnome-hotkeys/scripts/nautilus.bash,<Super>e
 Downloads,$DOTFILES_ROOT/gnome-hotkeys/scripts/downloads.bash,<Super>d
