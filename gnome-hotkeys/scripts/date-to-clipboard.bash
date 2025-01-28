@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-date "+%F" | xclip -selection c
+echo -n $(date "+%F") | xclip -selection c
