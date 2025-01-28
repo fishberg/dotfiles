@@ -11,8 +11,8 @@ name,command,binding
 Terminal,$DOTFILES_ROOT/gnome-hotkeys/scripts/terminal.bash,<Super>Return
 Firefox,$DOTFILES_ROOT/gnome-hotkeys/scripts/firefox.bash,<Super>f
 Firefox Private,$DOTFILES_ROOT/gnome-hotkeys/scripts/firefox-private.bash,<Super><Shift>f
-Calculator,$DOTFILES_ROOT/gnome-hotkeys/scripts/calculator.bash,<Super>c
-Courses,$DOTFILES_ROOT/gnome-hotkeys/scripts/courses.bash,<Super><Shift>c
+Courses,$DOTFILES_ROOT/gnome-hotkeys/scripts/courses.bash,<Super>c
+Calculator,$DOTFILES_ROOT/gnome-hotkeys/scripts/calculator.bash,<Super><Shift>c
 Nautilus,$DOTFILES_ROOT/gnome-hotkeys/scripts/nautilus.bash,<Super>e
 Downloads,$DOTFILES_ROOT/gnome-hotkeys/scripts/downloads.bash,<Super>d
 Read,$DOTFILES_ROOT/gnome-hotkeys/scripts/read.bash,<Super>r
