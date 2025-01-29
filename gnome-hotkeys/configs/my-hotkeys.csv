@@ -25,6 +25,7 @@ References,$DOTFILES_ROOT/gnome-hotkeys/scripts/references.bash,<Super>x
 References Insert,$DOTFILES_ROOT/gnome-hotkeys/scripts/references-insert.bash,<Super><Shift>x
 Screenshots,$DOTFILES_ROOT/gnome-hotkeys/scripts/screenshot.bash,<Super><Shift>g
 Gimp Recent Screenshot,$DOTFILES_ROOT/gnome-hotkeys/scripts/gimp-recent.bash,<Super><Shift><Primary>g
+Texteditor,$DOTFILES_ROOT/gnome-hotkeys/scripts/texteditor.bash,<Super>w
 
 # Wikis
 Weiss,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/weiss.bash,<Super>semicolon
