@@ -12,7 +12,8 @@ sudo apt install python3-numpy python3-matplotlib python3-pandas python3-scipy p
 # install pipx
 sudo apt install pipx
 
-pipx install jupyterlab
+#pipx install jupyterlab
+pipx install jupyterlab --include-deps --force
 pipx install nbstripout
 pipx install grip
 
