@@ -101,3 +101,11 @@ hdspace(){
     df -h | head -1
     df -h | grep -e "/$" --color=never
 }
+
+DETACH() {
+  nohup "$@" > /dev/null 2>&1 &
+}
+
+recent() {
+    ls -t | head -5
+}
