@@ -43,5 +43,6 @@ Connected Papers,$DOTFILES_ROOT/gnome-hotkeys/scripts/connected-papers.bash,<Sup
 
 # Clipboard Tools
 Date to Clipboard,$DOTFILES_ROOT/gnome-hotkeys/scripts/date-to-clipboard.bash,<Shift><Super>d
+Date and Time to Clipboard,$DOTFILES_ROOT/gnome-hotkeys/scripts/date-time-to-clipboard.bash,<Shift><Primary><Super>d
 Zoom URL,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/zoom-url.bash,<Super>period
 URL Strip,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/url-strip.bash,<Shift><Super>l
