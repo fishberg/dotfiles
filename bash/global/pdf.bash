@@ -1,6 +1,11 @@
 # https://stackoverflow.com/a/50237222
 pdf_printfix() {
     mkdir -p print_fixed
+    ps2pdf "$1" "print_fixed/$1"
+}
+
+pdf_printfix_all() {
+    mkdir -p print_fixed
     shopt -s nullglob
     for file in *.pdf; do
         echo "PROCESSING: $file"
