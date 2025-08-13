@@ -18,7 +18,8 @@ Dirs,$DOTFILES_ROOT/gnome-hotkeys/scripts/dirs.bash,<Super><Shift>e
 Downloads,$DOTFILES_ROOT/gnome-hotkeys/scripts/downloads.bash,<Super>d
 Read,$DOTFILES_ROOT/gnome-hotkeys/scripts/read.bash,<Super>r
 Textbooks,$DOTFILES_ROOT/gnome-hotkeys/scripts/textbooks.bash,<Super>t
-Books,$DOTFILES_ROOT/gnome-hotkeys/scripts/books.bash,<Super><Shift>t
+Textbooks Marked,$DOTFILES_ROOT/gnome-hotkeys/scripts/textbooks-marked.bash,<Super><Shift>t
+Books,$DOTFILES_ROOT/gnome-hotkeys/scripts/books.bash,<Primary><Super><Shift>t
 Storage,$DOTFILES_ROOT/gnome-hotkeys/scripts/storage.bash,<Super>s
 Dropbox,$DOTFILES_ROOT/gnome-hotkeys/scripts/dropbox.bash,<Super><Shift>s
 References,$DOTFILES_ROOT/gnome-hotkeys/scripts/references.bash,<Super>x
