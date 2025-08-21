@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+case "$1" in
+    *mail.google.com* ) exec chromium "$1" ;;
+    *                 ) exec /usr/bin/xdg-open "$1" ;;
+esac
