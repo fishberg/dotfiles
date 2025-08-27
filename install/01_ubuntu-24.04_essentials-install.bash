@@ -18,4 +18,4 @@ sudo apt install -y htop neofetch pm-utils net-tools xclip progress magic-wormho
 
 # purge
 sudo apt purge -y update-manager update-notifier unattended-upgrades
-sudo apt autoremove
+sudo apt autoremove -y
