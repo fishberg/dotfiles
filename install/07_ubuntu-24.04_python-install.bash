@@ -16,6 +16,7 @@ sudo apt install pipx
 pipx install jupyterlab --include-deps --force
 pipx install nbstripout
 pipx install grip
+pipx install yt-dlp
 
 ## allow pip to install without venv
 #sudo mv /usr/lib/python3.12/EXTERNALLY-MANAGED /usr/lib/python3.12/disabled_EXTERNALLY-MANAGED
