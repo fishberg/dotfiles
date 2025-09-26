@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-nautilus --new-window ~/read/marked
+#gnome-terminal --working-directory=/home/fishberg/read/marked
+nautilus --new-window /home/fishberg/read/marked
