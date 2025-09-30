@@ -3,9 +3,11 @@
 ### Install to ~/.dotfiles
 
 ```bash
-git clone git@github.com:fishberg/dotfiles.git ~/.dotfiles
-echo 'export DOTFILES_ROOT="$HOME/.dotfiles"' >> ~/.bashrc
-source ~/.bashrc
+sudo apt upgrade -y
+sudo apt update -y
+sudo apt install -y git
+git clone https://github.com/fishberg/dotfiles ~/.dotfiles
+cd ~/.dotfiles/install
 ```
 
 ### Install on Fresh System
