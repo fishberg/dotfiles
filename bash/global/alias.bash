@@ -23,6 +23,15 @@ alias dl='ls -t -1 ~/Downloads'
 
 alias devel='source devel/setup.bash'
 
+# %Y 4-digit year (e.g., 2025)
+# %m 2-digit month (e.g., 10)
+# %d 2-digit day (e.g., 02)
+# %H hour (00-23)
+# %M minute (00-59)
+# %S second (00-59)
+# %F shorthand for %Y-%m-%d
+# %T shorthand for %H:%M:%S
 alias today='date "+%F"'
+alias now='date "+%Y-%m-%d_%H-%M-%S"'
 
 alias space='du -h -d 0'
