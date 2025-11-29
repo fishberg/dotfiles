@@ -29,3 +29,8 @@ optional arguments:
 * Configs are just `.csv` files that can (1) have superfluous newlines that will be ignored, and (2) line comments indicated with `#`
 * See examples in `configs` folder
 * Some scripts included in my config contains sensitive information (e.g., links and IP addresses). These scripts are included in the `private-scripts` folder instead of the `scripts` folder. The contents of `private-scripts` needs to be linked from another repo.
+
+## Notes
+```
+gsettings set org.gnome.desktop.wm.keybindings close "['<Alt>F4', '<Shift><Super>q']"
+```
