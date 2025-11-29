@@ -51,3 +51,4 @@ Date to Clipboard,$DOTFILES_ROOT/gnome-hotkeys/scripts/date-to-clipboard.bash,<S
 Date and Time to Clipboard,$DOTFILES_ROOT/gnome-hotkeys/scripts/date-time-to-clipboard.bash,<Shift><Primary><Super>d
 Zoom URL,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/zoom-url.bash,<Super>period
 URL Strip,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/url-strip.bash,<Shift><Super>l
+Clipboard Newline Remove,$DOTFILES_ROOT/scripts/clipboard-newline-remove.py,<Ctrl><Shift><Super>l
