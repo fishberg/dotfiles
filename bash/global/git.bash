@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-alias git_open="$DOTFILES_ROOT/scripts/gitopen.py"
+alias git_open="$DOTFILES_ROOT/scripts/git_open.py"
 alias git_link="git remote get-url origin"
 alias git_info="gitlink; git branch --show-current"
 
