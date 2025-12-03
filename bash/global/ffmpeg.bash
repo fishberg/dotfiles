@@ -33,7 +33,7 @@ ffmpeg_audio_extract_mp3() {
     set +x
 }
 
-ffmpeg_rot_cw90() {
+ffmpeg_rot90cw() {
     if [ "$#" -ne 2 ]; then
         echo "Usage: ${FUNCNAME[0]} <infile> <outfile>" >&2
         return 1
@@ -44,7 +44,7 @@ ffmpeg_rot_cw90() {
     set +x
 }
 
-ffmpeg_rot_ccw90() {
+ffmpeg_rot90ccw() {
     if [ "$#" -ne 2 ]; then
         echo "Usage: ${FUNCNAME[0]} <infile> <outfile>" >&2
         return 1
@@ -55,7 +55,7 @@ ffmpeg_rot_ccw90() {
     set +x
 }
 
-ffmpeg_rot_180() {
+ffmpeg_rot180() {
     if [ "$#" -ne 2 ]; then
         echo "Usage: ${FUNCNAME[0]} <infile> <outfile>" >&2
         return 1
