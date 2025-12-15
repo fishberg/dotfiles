@@ -23,3 +23,14 @@ pdf_merge() {
     # variable of all merged
     pdftk  $* output merge.pdf
 }
+
+pdf_extract() {
+    # check extract.pdf does not exist
+    if [ -f extract.pdf ]; then
+        echo "extract.pdf already exists. Please remove it first."
+        return 1
+    fi
+
+    pages=("${@:2}")
+    pdftk $1 cat $pages output extract.pdf
+}
