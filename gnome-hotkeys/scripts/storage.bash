@@ -10,13 +10,15 @@
 
 # storage location
 STORAGE_DIR=~/storage
+YEAR=$(date "+%Y")
 TODAY=$(date "+%F")
 
 # create today's directory
-mkdir -p $STORAGE_DIR/$(date "+%F")
+mkdir -p $STORAGE_DIR/$YEAR/$TODAY
 
 # remove empty directories (if they aren't todays)
-find $STORAGE_DIR/* -maxdepth 0 -not \( -path $STORAGE_DIR/$TODAY -prune \) -type d -empty -exec rmdir -v {} \;
+# only search this year's folder
+find $STORAGE_DIR/$YEAR/* -maxdepth 0 -not \( -path $STORAGE_DIR/$YEAR/$TODAY -prune \) -type d -empty -exec rmdir -v {} \;
 
 # open in nautilus
-nautilus --new-window $STORAGE_DIR/$TODAY
+nautilus --new-window $STORAGE_DIR/$YEAR/$TODAY
