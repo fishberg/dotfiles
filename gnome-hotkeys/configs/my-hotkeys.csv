@@ -43,8 +43,9 @@ arXiv,$DOTFILES_ROOT/gnome-hotkeys/scripts/open-arxiv-ro.bash,<Super>u
 
 # Academic Search
 Google Scholar,$DOTFILES_ROOT/gnome-hotkeys/scripts/google-scholar.bash,<Super>bracketleft
-Semantic Scholar,$DOTFILES_ROOT/gnome-hotkeys/scripts/semantic-scholar.bash,<Super>bracketright
-Connected Papers,$DOTFILES_ROOT/gnome-hotkeys/scripts/connected-papers.bash,<Super>backslash
+dblp,$DOTFILES_ROOT/gnome-hotkeys/scripts/dblp.bash,<Super>bracketright
+Semantic Scholar,$DOTFILES_ROOT/gnome-hotkeys/scripts/semantic-scholar.bash,<Super><Shift>bracketright
+Connected Papers,$DOTFILES_ROOT/gnome-hotkeys/scripts/connected-papers.bash,<Super><Shift>bracketleft
 
 # Clipboard Tools
 Date to Clipboard,$DOTFILES_ROOT/gnome-hotkeys/scripts/date-to-clipboard.bash,<Shift><Super>d
