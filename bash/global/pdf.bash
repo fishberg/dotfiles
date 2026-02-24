@@ -21,7 +21,9 @@ pdf_merge() {
     fi
     
     # variable of all merged
+    set -x
     pdftk  $* output merge.pdf
+    set +x
 }
 
 pdf_extract() {
@@ -32,5 +34,7 @@ pdf_extract() {
     fi
 
     pages=("${@:2}")
+    set -x
     pdftk $1 cat $pages output extract.pdf
+    set +x
 }
