@@ -12,6 +12,7 @@ cd ~/.dotfiles/install
 
 After setup, migrate repo from HTTPS to SSH with:
 ```
+cd $DOTFILES_ROOT
 git_migrate_https2ssh
 ```
 
