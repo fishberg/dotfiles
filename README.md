@@ -10,6 +10,11 @@ git clone https://github.com/fishberg/dotfiles ~/.dotfiles
 cd ~/.dotfiles/install
 ```
 
+After setup, migrate repo from HTTPS to SSH with:
+```
+git_migrate_https2ssh
+```
+
 ### Install on Fresh System
 
 ```bash
