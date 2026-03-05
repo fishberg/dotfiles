@@ -3,7 +3,6 @@ alias vi=nvim
 alias copy='xclip -selection c'
 alias strip='nbstripout *.ipynb'
 alias exe='chmod +x'
-alias open='nohup nautilus -w . >/dev/null 2>&1'
 alias txt='gnome-text-editor -n'
 
 alias home='cd ~'

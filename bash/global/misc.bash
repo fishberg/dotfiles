@@ -10,3 +10,20 @@ text_send () {
 
     printf '%s\n' "$*" | ssh "$host" "cat >> '$file'"
 }
+
+open() {
+    # if you ran with 0 args, set $1 to "."
+    if [[ $# -eq 0 ]]; then
+        set -- .
+    fi
+
+    for target in "$@"; do
+        if [[ "$target" =~ ^https?:// ]]; then
+            xdg-open "$target" >/dev/null 2>&1 &
+        elif [[ -e "$target" ]]; then
+            xdg-open "$target" >/dev/null 2>&1 &
+        else
+            echo "open: '$target' does not exist" >&2
+        fi
+    done
+}
