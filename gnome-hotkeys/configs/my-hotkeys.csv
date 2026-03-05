@@ -21,10 +21,10 @@ Textbooks,$DOTFILES_ROOT/gnome-hotkeys/scripts/textbooks.bash,<Super>t
 Marked,$DOTFILES_ROOT/gnome-hotkeys/scripts/marked.bash,<Super><Shift>t
 Books,$DOTFILES_ROOT/gnome-hotkeys/scripts/books.bash,<Primary><Super><Shift>t
 Storage,$DOTFILES_ROOT/gnome-hotkeys/scripts/storage.bash,<Super>s
-Dropbox,$DOTFILES_ROOT/gnome-hotkeys/scripts/dropbox.bash,<Super><Shift>s
+Dropbox,$DOTFILES_ROOT/gnome-hotkeys/scripts/dropbox.bash,<Super><Shift><Ctrl>s
 References,$DOTFILES_ROOT/gnome-hotkeys/scripts/references.bash,<Super>x
 References Insert,$DOTFILES_ROOT/gnome-hotkeys/scripts/references-insert.bash,<Super><Shift>x
-Screenshots,$DOTFILES_ROOT/gnome-hotkeys/scripts/screenshot.bash,<Super><Shift>g
+Screenshots,$DOTFILES_ROOT/gnome-hotkeys/scripts/screenshot.bash,<Super><Shift>s
 Gimp Recent Screenshot,$DOTFILES_ROOT/gnome-hotkeys/scripts/gimp-recent.bash,<Super><Shift><Primary>g
 Texteditor,$DOTFILES_ROOT/gnome-hotkeys/scripts/texteditor.bash,<Super>w
 Whisper,$DOTFILES_ROOT/gnome-hotkeys/scripts/whisper.bash,<Super><Shift>w
