@@ -15,3 +15,6 @@ git config --global init.defaultBranch main
 
 # rebase instead of merge
 git config --global pull.rebase true
+
+# remind to add key
+echo 'add key here: https://github.com/settings/keys'
