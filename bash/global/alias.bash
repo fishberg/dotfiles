@@ -8,11 +8,6 @@ alias txt='gnome-text-editor -n'
 alias home='cd ~'
 alias downloads='cd ~/Downloads'
 
-alias dotfiles='cd ~/.dotfiles'
-alias dotfiles_bash='cd ~/.dotfiles/bash/global'
-alias dotfiles_bash_local='cd ~/.dotfiles/bash/local'
-alias dotfiles_sync='git -C ~/.dotfiles pull; src'
-
 alias ls='ls --color'
 alias l='ls'
 alias ll='ls -l'
