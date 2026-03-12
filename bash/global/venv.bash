@@ -1,14 +1,16 @@
 venv_create() {
-    NAME="${1:-venv}"
+    NAME="${1:-.venv}"
     set -x
     python -m venv $NAME
+    venv_activate
     set +x
 }
 
 venv_activate() {
-    #source */bin/activate
-    shopt -s nullglob
-    local matches=(*/bin/activate)
+    # nullglob = if nothing matches, return ""
+    # dotglob = include files/dirs with leading . in *
+    local matches
+    matches=($(shopt -s nullglob dotglob; echo */bin/activate))
 
     if (( ${#matches[@]} == 1 )); then
         source "${matches[0]}"
@@ -24,4 +26,12 @@ venv_activate() {
 
 venv_deactivate() {
     deactivate
+}
+
+venv_requirements() {
+    NAME="${1:-requirements.txt}"
+    venv_create
+    venv_activate
+    pip install -r $NAME
+
 }
