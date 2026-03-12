@@ -1,7 +1,6 @@
 alias src='source ~/.bashrc'
 alias vi=nvim
 alias copy='xclip -selection c'
-alias strip='nbstripout *.ipynb'
 alias exe='chmod +x'
 alias txt='gnome-text-editor -n'
 
