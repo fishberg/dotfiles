@@ -7,14 +7,18 @@ set -x
 sudo apt install -y python-is-python3 python3-pip python3-venv
 
 # system install
-sudo apt install python3-numpy python3-matplotlib python3-pandas python3-scipy python3-jupyterlab python3-tabulate python3-termcolor
+sudo apt install -y python3-numpy python3-matplotlib python3-pandas python3-scipy python3-tabulate python3-termcolor
 
 # install pipx
-sudo apt install pipx
+sudo apt install -y pipx
 
-#pipx install jupyterlab
+# jupyter
 pipx install jupyterlab --include-deps --force
 pipx install nbstripout
+pipx install nbdime
+pipx install jupytext
+
+# userful tools
 pipx install grip
 pipx install yt-dlp
 
