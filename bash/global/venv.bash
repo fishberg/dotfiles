@@ -1,9 +1,9 @@
 venv_create() {
-    NAME="${1:-.venv}"
-    set -x
+    local NAME="${1:-.venv}"
+    #set -x
     python -m venv $NAME
     venv_activate
-    set +x
+    #set +x
 }
 
 venv_activate() {
@@ -29,9 +29,8 @@ venv_deactivate() {
 }
 
 venv_requirements() {
-    NAME="${1:-requirements.txt}"
+    local NAME="${1:-requirements.txt}"
     venv_create
     venv_activate
     pip install -r $NAME
-
 }
