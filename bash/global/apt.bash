@@ -7,3 +7,15 @@ apt-manually-installed(){
 	# <(...): comm substitutions
 	comm -23 <(apt-mark showmanual | sort) <(apt-mark showauto | sort)
 }
+
+apt_installed_manual(){
+    apt-mark showmanual
+}
+
+apt_installed_auto(){
+    apt-mark showauto
+}
+
+apt_installed(){
+    apt list --installed
+}
