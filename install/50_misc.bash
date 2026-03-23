@@ -8,3 +8,6 @@ sudo apt install -y cheese
 
 # qr code
 sudo apt install -y qrencode
+
+# barcode
+sudo apt install -y zint
