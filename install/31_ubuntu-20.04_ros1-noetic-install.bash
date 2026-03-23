@@ -33,14 +33,14 @@ echo -e "\n# ROS install\nsource /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # 1.6 Dependencies for building packages
-sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+sudo apt install -y python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 
 # 1.6.1 Initialize rosdep
-sudo apt install python3-rosdep
+sudo apt install -y python3-rosdep
 sudo rosdep init
 rosdep update
 
 # python3-catkin-tools is in ros repos
-sudo apt-get install -y python3-catkin-tools
+sudo apt install -y python3-catkin-tools
 
 # run source ~/.bashrc

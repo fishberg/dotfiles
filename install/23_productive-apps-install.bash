@@ -6,7 +6,7 @@ set -x
 # ----------------------------------------------------------
 # Chromium (Gmail / Google Calendar)
 # ----------------------------------------------------------
-sudo apt install chromium
+sudo apt install -y chromium
 
 # ----------------------------------------------------------
 # Signal Desktop
@@ -22,7 +22,7 @@ echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] 
   sudo tee /etc/apt/sources.list.d/signal-xenial.list
 
 # 3. Update your package database and install Signal:
-sudo apt update && sudo apt install signal-desktop
+sudo apt update && sudo apt install -y signal-desktop
 
 # cleanup gpg key
 rm signal-desktop-keyring.gpg
@@ -68,4 +68,4 @@ sudo snap install slack
 flatpak install flathub org.zotero.Zotero
 # flatpak run org.zotero.Zotero
 
-echo "install Zotero Firefox plugin: https://www.zotero.org/download/"
+echo "install Zotero Firefox plugin: https://www.zotero.org/download/ "

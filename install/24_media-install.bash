@@ -4,8 +4,8 @@
 set -x
 
 # media
-sudo apt install vlc
-sudo apt install audacity
+sudo apt install -y vlc
+sudo apt install -y audacity
 sudo snap install gimp
 sudo snap install kdenlive
 

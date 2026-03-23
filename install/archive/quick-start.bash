@@ -8,7 +8,7 @@ if which git > /dev/null; then
     echo "git is installed"
 else
     echo "git is NOT installed"
-    sudo apt install git
+    sudo apt install -y git
 fi
 
 # https clone
