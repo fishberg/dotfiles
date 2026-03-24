@@ -1,5 +1,6 @@
 # nbstripout
-alias strip='nbstripout *.ipynb'
+alias strip='nbstripout'
+alias strip_all='nbstripout *.ipynb'
 
 # nbconvert
 alias ipynb_to_pdf='jupyter nbconvert --to pdf'
