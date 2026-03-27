@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-gnome-terminal --working-directory=/home/fishberg/dirs/whisper-remote
+gnome-terminal --working-directory=/home/fishberg/p/whisper-remote
