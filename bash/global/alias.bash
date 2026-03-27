@@ -29,3 +29,5 @@ alias today='date "+%F"'
 alias now='date "+%Y-%m-%d_%H-%M-%S"'
 
 alias space='du -h -d 0'
+
+alias internet?='ping -c 1 8.8.8.8'
