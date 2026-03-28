@@ -13,6 +13,9 @@ sudo ubuntu-drivers install
 # minimum functionality
 sudo apt install -y git curl neovim tmux
 
+# core developer
+sudo apt install -y build-essential cmake
+
 # utilities
 sudo apt install -y htop neofetch pm-utils net-tools xclip progress magic-wormhole rsync rclone ffmpeg ccrypt tree plocate tmuxp
 
