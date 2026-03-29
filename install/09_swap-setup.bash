@@ -49,6 +49,9 @@ fi
 # https://stackoverflow.com/questions/2853803/how-to-echo-shell-commands-as-they-are-executed
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 # remove all swaps
 swapoff -a
 

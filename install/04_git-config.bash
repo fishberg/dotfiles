@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 # commit user info
 git config --global user.name "Andrew Fishberg"
 git config --global user.email "fishberg.dev@gmail.com"

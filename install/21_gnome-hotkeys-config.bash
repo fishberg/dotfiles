@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 # You can reset gsettings field with:
 # gsettings reset org.freedesktop.ibus.panel.emoji hotkey
 

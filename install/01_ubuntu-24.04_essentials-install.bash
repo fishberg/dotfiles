@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 # update
 sudo apt -y update
 sudo apt -y upgrade

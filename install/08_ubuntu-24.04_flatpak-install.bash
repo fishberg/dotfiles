@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 # flatpak
 # https://flatpak.org/setup/
 # https://flatpak.org/setup/Ubuntu

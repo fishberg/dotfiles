@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 # Install Docker Engine on Ubuntu (20.04, 22.04, 24.04)
 # https://docs.docker.com/engine/install/ubuntu/
 

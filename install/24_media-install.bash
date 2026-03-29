@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 # media
 sudo apt install -y vlc
 sudo apt install -y audacity

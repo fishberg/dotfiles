@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 # Ubuntu 22.04 -> ROS2 Humble Irwini (2022) [EOL May 2027]
 # - Targets: https://docs.ros.org/en/humble/Installation.html
 # - ROS2 Releases: https://docs.ros.org/en/rolling/Releases.html

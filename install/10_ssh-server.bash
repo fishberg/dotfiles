@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 sudo apt install -y openssh-server
 
 # configure server: /etc/ssh/sshd_config

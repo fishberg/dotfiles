@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 # gnome
 sudo apt install -y gnome-session gnome-tweaks
 

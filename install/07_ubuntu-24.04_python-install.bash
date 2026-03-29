@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 # python3
 sudo apt install -y python-is-python3 python3-pip python3-venv
 

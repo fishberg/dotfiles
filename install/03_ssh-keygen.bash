@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 mkdir -p ~/.ssh
 cd ~/.ssh
 ssh-keygen -f $HOSTNAME

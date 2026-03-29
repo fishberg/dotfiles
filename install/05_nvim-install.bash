@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 # symlink nvim config folder
 # -T prevents nesting in nesting if symlink already exists
 ln -svT $DOTFILES_ROOT/nvim ~/.config/nvim

@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 # Ubuntu 24.04 -> ROS2 Jazzy Jalisco (2024) [EOL May 2029]
 # - Targets: https://docs.ros.org/en/jazzy/Installation.html
 # - ROS2 Releases: https://docs.ros.org/en/rolling/Releases.html

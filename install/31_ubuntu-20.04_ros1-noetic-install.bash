@@ -3,6 +3,9 @@
 # show commands
 set -x
 
+# exit on error, unset variable, failure in pipes
+set -euo pipefail
+
 # Ubuntu 20.04 -> ROS1 Noetic Ninjemys (2020) [EOL May 2025]
 # - Targets: http://wiki.ros.org/noetic
 # - ROS1 Releases: http://wiki.ros.org/Distributions
