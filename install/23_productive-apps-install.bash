@@ -59,8 +59,8 @@ flatpak install flathub com.todoist.Todoist
 # Slack
 # ----------------------------------------------------------
 # https://slack.com/downloads/linux
-
-sudo snap install slack
+echo "Download Slack .deb at: https://slack.com/downloads/linux"
+#sudo snap install slack
 
 # ----------------------------------------------------------
 # Zotero
