@@ -19,3 +19,7 @@ apt_installed_auto(){
 apt_installed(){
     apt list --installed
 }
+
+apt_up() {
+    sudo apt update -y && sudo apt upgrade -y
+}
