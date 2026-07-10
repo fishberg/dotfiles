@@ -38,3 +38,19 @@ pdf_extract() {
     pdftk $1 cat $pages output extract.pdf
     set +x
 }
+
+pdf_compress() {
+    # check compress.pdf does not exist
+    if [ -f compress.pdf ]; then
+        echo "compress.pdf already exists. Please remove it first."
+        return 1
+    fi
+    # /screen   - lowest quality, smallest size (72 dpi images)
+    # /ebook    - good middle ground (150 dpi), usually what you want
+    # /printer  - higher quality (300 dpi)
+    # /prepress - highest quality, largest size
+    gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 \
+       -dPDFSETTINGS=/ebook \
+       -dNOPAUSE -dBATCH -dQUIET \
+       -sOutputFile=compress.pdf $1
+}
