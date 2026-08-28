@@ -31,6 +31,9 @@ Whisper,$DOTFILES_ROOT/gnome-hotkeys/scripts/whisper.bash,<Super><Shift>w
 Marked,$DOTFILES_ROOT/gnome-hotkeys/scripts/marked.bash,<Super>m
 Notes New,$DOTFILES_ROOT/gnome-hotkeys/scripts/notes-new.bash,<Super>n
 Notes Open,$DOTFILES_ROOT/gnome-hotkeys/scripts/notes-open.bash,<Super><Shift>n
+Displays,$DOTFILES_ROOT/gnome-hotkeys/scripts/displays.bash,<Super><Shift>p
+Keyboard Shortcuts,$DOTFILES_ROOT/gnome-hotkeys/scripts/keyboard-shortcuts.bash,<Super>h
+
 
 # Wikis
 Weiss,$DOTFILES_ROOT/gnome-hotkeys/private-scripts/weiss.bash,<Super>semicolon
