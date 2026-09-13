@@ -68,3 +68,7 @@ git_migrate_https2ssh(){
         git remote set-url origin $url_ssh
     fi
 }
+
+git_gitignore_default(){
+    printf '*\n!.gitignore\n' >> .gitignore
+}
