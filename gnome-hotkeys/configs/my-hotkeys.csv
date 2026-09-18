@@ -17,9 +17,10 @@ Nautilus,$DOTFILES_ROOT/gnome-hotkeys/scripts/nautilus.bash,<Super>e
 Dirs,$DOTFILES_ROOT/gnome-hotkeys/scripts/dirs.bash,<Super><Shift>e
 Downloads,$DOTFILES_ROOT/gnome-hotkeys/scripts/downloads.bash,<Super>d
 Read,$DOTFILES_ROOT/gnome-hotkeys/scripts/read.bash,<Super>r
-Textbooks,$DOTFILES_ROOT/gnome-hotkeys/scripts/textbooks.bash,<Super>t
-Marked,$DOTFILES_ROOT/gnome-hotkeys/scripts/marked.bash,<Super><Shift>t
+t,$DOTFILES_ROOT/gnome-hotkeys/scripts/t.bash,<Super>t
+Textbooks,$DOTFILES_ROOT/gnome-hotkeys/scripts/textbooks.bash,<Super><Shift>t
 Books,$DOTFILES_ROOT/gnome-hotkeys/scripts/books.bash,<Primary><Super><Shift>t
+Marked,$DOTFILES_ROOT/gnome-hotkeys/scripts/marked.bash,<Super>m
 Storage,$DOTFILES_ROOT/gnome-hotkeys/scripts/storage.bash,<Super>s
 Dropbox,$DOTFILES_ROOT/gnome-hotkeys/scripts/dropbox.bash,<Super><Shift><Ctrl>s
 References,$DOTFILES_ROOT/gnome-hotkeys/scripts/references.bash,<Super>x
