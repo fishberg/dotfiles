@@ -7,7 +7,11 @@ set -x
 set -euo pipefail
 
 # gnome
-sudo apt install -y gnome-session gnome-tweaks
+sudo apt install -y \
+    gnome-session \
+    gnome-tweaks \
+    gnome-shell-extensions \
+    gnome-shell-extension-manager
 
 # ----------------------------------------------------------
 # gnome clock
@@ -40,18 +44,6 @@ sudo apt install -y gnome-session gnome-tweaks
 # ----------------------------------------------------------
 # Windows > Focus on Hover
 
-echo 'read script comments for additional config settings'
+echo 'GNOME extensions install/config: https://github.com/fishberg/gnome-extensions-setup'
 
-# ----------------------------------------------------------
-# system monitor applet
-# ----------------------------------------------------------
-# Updated Fork:
-# * https://extensions.gnome.org/extension/3010/system-monitor-next/
-# * https://github.com/mgalgs/gnome-shell-system-monitor-applet
-#
-# Original:
-# * https://extensions.gnome.org/extension/120/system-monitor/
-# * https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet
-sudo apt install gnome-shell-extensions
-echo 'install extension: https://extensions.gnome.org/extension/3010/system-monitor-next/'
-# gnome-shell --version
+gnome-shell --version
